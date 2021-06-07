@@ -7,9 +7,6 @@ spec:
     - name: user
       type: string
       description: User name for registry
-    # - name: pass
-    #   type: string
-    #   description: Registry password
     - name: image-name
       type: string
       description: Name of the image to produce (will be user/image-name)
@@ -22,7 +19,7 @@ spec:
         name: npm
       params:
         - name: pathContext
-          value: apps/dashboard/build/src
+          value: build/src
         - name: action
           value: run lint
       resources:
@@ -33,8 +30,6 @@ spec:
       params:
         - name: user
           value: $(params.user)
-        # - name: pass
-        #   value: $(params.pass)
         - name: image-name
           value: $(params.image-name)
       taskRef:

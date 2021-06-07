@@ -6,13 +6,12 @@
   "license": "",
   "author": "",
   "scripts": {
-    "lint": "npx eslint js/main.js",
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "eslint": "^7.5.0"
+    "parcel-bundler": "^1.12.4"
   }
 }
